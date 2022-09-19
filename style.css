@@ -1,4 +1,13 @@
-/* Import Google Font -  */
+/* Import Fonts -  */
+@font-face {
+    font-family: 'Tutti Frutti';
+    src: url(./resources/fonts/TuttiFrutti.otf);
+}  
+@font-face {
+        font-family: 'Gaegu-Regular';
+        src: url(./resources/fonts/Gaegu-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +17,8 @@
 }
 
 body{
-    background-color: pink;
+    background-color: #FFFFFB;
+    color: #56423B;
 }
 .wrapper{
     margin: 50px;
@@ -17,41 +27,74 @@ body{
     grid-template-columns: repeat(auto-fill, 265px);
 }
 .wrapper li{
- background-color: white;
+ background-color: #ECE6DF;
  height: 250px;
  list-style: none;
  border-radius: 5px;
  padding: 15px 20px 20px;
 }
-.add-box, .bottom-content {
-   display: flex;
-   align-items: center;
-
+.add-box, .icon{
+    display: flex;
+    align-items: center;
 }
-.add-box{
+.add-box {
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
+}
+.add-box:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+.add-box .icon{
+    flex-direction: column;
+    justify-content: center;
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: #A68074;
+    color: #ECE6DF;
+}
+.add-box p{
+color:#56423B;
+font-family: 'Tutti Frutti';
+font-size: 24px;
+margin-top: 20px;
+
 }
 .wrapper .note{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+.note:hover{
+    /*transition: 0.7s;
+    width: 105%;
+    height: 105%;
+    border: solid #A68074;
+    z-index: 1;
+    cursor: pointer;*/
+    transition: 1s;
+    opacity: 0.5;
+    cursor: pointer; /* add custom pointer later*/
+    
+}
 .note p{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
+    font-family: 'Tutti Frutti';
 }
 .note span{
     display:block;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Gaegu-Regular';
 }
-.note .bottom-content{
-padding-top: 10px;
-border-top: 1px solid pink;
-}
+
 .bottom-content span{
-    color: rgba(0, 0, 0, 0.591);
+    color: #A68074;
     font-size: 14px;
+  
 }
-/* .bottom-content .settings i{}*/
