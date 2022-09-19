@@ -15,13 +15,12 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
 body{
     background-color: #FFFFFB;
     color: #56423B;
 }
 .wrapper{
-    margin: 50px;
+    margin: 5px 50px 50px 50px;
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(auto-fill, 265px);
@@ -97,4 +96,11 @@ margin-top: 20px;
     color: #A68074;
     font-size: 14px;
   
+}
+.end-note {
+background-color: transparent !important;
+}
+#dog{
+    width: 245px;
+    height: 235px;
 }
