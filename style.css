@@ -1,0 +1,57 @@
+/* Import Google Font -  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+    background-color: pink;
+}
+.wrapper{
+    margin: 50px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, 265px);
+}
+.wrapper li{
+ background-color: white;
+ height: 250px;
+ list-style: none;
+ border-radius: 5px;
+ padding: 15px 20px 20px;
+}
+.add-box, .bottom-content {
+   display: flex;
+   align-items: center;
+
+}
+.add-box{
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper .note{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.note p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.note span{
+    display:block;
+    font-size: 16px;
+}
+.note .bottom-content{
+padding-top: 10px;
+border-top: 1px solid pink;
+}
+.bottom-content span{
+    color: rgba(0, 0, 0, 0.591);
+    font-size: 14px;
+}
+/* .bottom-content .settings i{}*/
